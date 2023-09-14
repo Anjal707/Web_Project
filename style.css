@@ -1,0 +1,143 @@
+body{
+    margin-top: 3%;
+    background-color: #aaa;
+}
+ 
+.Navbar{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.search-button{
+    margin-left: 15px;
+}
+.recipebox{
+    position: relative;
+  width: 60%;
+  left: 20%;
+  padding: 15px;
+  box-sizing: border-box;
+  border: 2px solid #222222;
+  border-radius: 5px;
+  background-color: #ddd;
+}
+  
+ul{
+    list-style-type: square;
+}
+
+ul li, h4{
+    font-family: sans-serif;
+}
+  
+.accordion{
+    font-weight: bold;
+  color: #aaa;
+  background-color: #111111;
+  width: 100%;
+  border: 2px solid #333;
+  border-radius: 5px;
+  padding: 18px;
+  margin-bottom: 10px;
+}
+  
+.accordion.active, .accordion:hover{
+    color: #333;
+  background-color: #aaa;
+  cursor: pointer;
+}
+
+.Reciepe{
+    margin-top: 90px;
+}
+  
+  
+.panel{
+    max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: 0.4s ease-in-out;
+}
+  
+.panel.show{
+    max-height: 500px;
+  opacity: 1;
+}
+  
+ 
+.center{
+    text-align: center;
+}
+  
+.line{
+    width: 100%;
+  border: 1px solid #000;
+  border-radius: 100%;
+}
+  
+.btn-group{
+  margin: 0px 0px 10px 25px;
+}  
+.btn-group button{
+    padding: 3px;
+  margin-right: 10px;
+}
+  
+.btn-group button:first-child{
+    background-color: #ab0000;
+  color: #ddd;
+  border: 2px solid #ab0000;
+  border-radius: 5px;
+  font-weight: bold;
+}
+  
+.btn-group button:first-child:hover, .btn-group button:last-child:hover, .edit button:hover, #add-rec:hover{
+    color: #222222;
+  cursor: pointer
+}
+
+  
+.btn-group button:last-child, .edit button, #add-rec{
+    background-color: #1f3f68;
+  color: #ddd;
+  border: 2px solid #1f3f68;
+  border-radius: 5px;
+  font-weight: bold
+}
+  
+.edit{
+    width: 100%;
+  max-height: 0px;
+  opacity: 0;
+  overflow: hidden;
+}
+  
+.edit *{
+    display: block;
+  position: relative;
+  left: 50%;
+  margin-left: -46%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+  
+.edit button{
+    padding: 3px
+}
+  
+.edit input, .edit textarea{
+    border: 1px solid #222222;
+  border-radius: 3px;
+  width: 90%;
+  padding: 5px;
+}
+  
+.edit.show{
+    opacity: 1;
+  max-height: 500px;
+}
+  
+#add-rec{
+    margin-top: 5px;
+    padding: 8px;
+}

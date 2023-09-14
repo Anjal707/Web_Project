@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Add a search input and button -->
+<div class="Navbar">
+    <input type="text" id="search-input" placeholder="Search for recipes">
+    <button id="search-button" class="search-button">Search</button>
+</div>
+
+    <div class="recipebox">
+        <button id="add-rec">Add</button>
+      </div>
+      
+      
+      <div class="recipe" id="1">
+        <button class="accordion Reciepe">Recipe</button>
+        <div class="panel">
+          <h4 class="center title">Ingrediants</h4>
+          <ul>
+            <li>Ingrediant 1</li>
+            <li>Ingrediant 2</li>
+            <li>Ingrediant 3</li>
+          </ul>
+          <div class="btn-group">
+            <button>Delete</button>
+            <button>Edit</button>
+          </div>
+        </div> 
+        <div class="edit">
+          <input type="text">
+          <textarea rows="5"></textarea>
+          <button>Save</button>
+        </div>
+      </div>
+      <script src="./script.js"></script>
+      
+</body>
+</html>
